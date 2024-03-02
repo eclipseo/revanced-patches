@@ -45,7 +45,7 @@ tasks {
             attributes["Description"] = "Patches for ReVanced."
             attributes["Version"] = version
             attributes["Timestamp"] = System.currentTimeMillis().toString()
-            attributes["Source"] = "git@github.com:revanced/revanced-patches.git"
+            attributes["Source"] = "git@github.com:eclipseo/revanced-patches.git"
             attributes["Author"] = "ReVanced"
             attributes["Contact"] = "contact@revanced.app"
             attributes["Origin"] = "https://revanced.app"
@@ -99,7 +99,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/revanced/revanced-patches")
+            url = uri("https://maven.pkg.github.com/eclipseo/revanced-patches")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -130,9 +130,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/revanced/revanced-patches.git"
-                    developerConnection = "scm:git:git@github.com:revanced/revanced-patches.git"
-                    url = "https://github.com/revanced/revanced-patches"
+                    connection = "scm:git:git://github.com/eclipseo/revanced-patches.git"
+                    developerConnection = "scm:git:git@github.com:eclipseo/revanced-patches.git"
+                    url = "https://github.com/eclipseo/revanced-patches"
                 }
             }
         }
